@@ -7,6 +7,8 @@ define([
 	'directives',
 	'controllers',
 	'angularRoute',
+    'datatables',
+    'angular-datatables'
 	], function (angular, filters, services, directives, controllers) {
 
 		// Declare app level module which depends on filters, and services
@@ -16,6 +18,7 @@ define([
 			'myApp.filters',
 			'myApp.services',
 			'myApp.directives',
-			'myApp.controllers'
+			'myApp.controllers',
+            'datatables'
 		]);
 });
