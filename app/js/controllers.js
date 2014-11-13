@@ -18,5 +18,8 @@ define(['angular', 'services'], function (angular) {
 				// Furthermore we need to pass on the $scope as it's unique to this controller
 				$injector.invoke(myctrl2, this, {'$scope': $scope});
 			});
-		}]);
+		}])
+        .controller('MyCtrl3', ['$scope', 'version', function ($scope, version) {
+            $scope.scopedAppVersion = version;
+        }]);
 });
